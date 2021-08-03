@@ -22,7 +22,8 @@ export const Image = styled.img``
 export const Button = styled.button`
   padding: 1rem 1rem;
   border-radius: 3rem;
-  border: 1px solid #ee0e7d;
+  border: 1px solid ${Colors.pinkJussi};
+  color: ${Colors.pinkJussi};
   width: fit-content;
   bottom: 0;
 `
