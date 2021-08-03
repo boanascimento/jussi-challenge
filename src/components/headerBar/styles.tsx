@@ -40,6 +40,7 @@ export const ButtonMenu = styled.button`
   transition: ${Default.transition};
   background-color: transparent;
   padding: 8px 20px;
+  margin: 0 10px;
   &:hover {
     background-color: ${Colors.greenJussi};
   }
@@ -56,19 +57,6 @@ export const SearchContent = styled.div`
 
 export const InputSearch = styled.input`
   color: ${Colors.pinkJussi};
-  background-color: transparent;
-`
-
-interface IIconButton {
-  img: string
-}
-export const IconButton = styled.button<IIconButton>`
-  background-image: url(${(props) => props.img});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto;
-  height: 25px;
-  width: 25px;
   background-color: transparent;
 `
 

@@ -7,10 +7,10 @@ import {
   RightGroupButtons,
   SearchContent,
   InputSearch,
-  IconButton,
 } from './styles'
 import imgSearch from '../../assets/images/search.svg'
 import imgShoppingCart from '../../assets/images/shoppingCart.svg'
+import { IconButton } from '../common/iconButton'
 
 export const HeaderBar: React.FC = (): JSX.Element => {
   return (
@@ -23,10 +23,10 @@ export const HeaderBar: React.FC = (): JSX.Element => {
       <RightGroupButtons>
         <SearchContent>
           <InputSearch placeholder={'Buscar'} />
-          <IconButton img={imgSearch} />
+          <IconButton imgUrl={imgSearch} />
         </SearchContent>
         <ButtonMenu>Login</ButtonMenu>
-        <IconButton img={imgShoppingCart} />
+        <IconButton imgUrl={imgShoppingCart} />
       </RightGroupButtons>
     </Container>
   )
