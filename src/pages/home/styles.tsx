@@ -12,6 +12,10 @@ export const AppRoot = createGlobalStyle`
     outline: none;
     border: none
   }
+
+  button {
+    background-color: transparent;
+  }
 `
 
 export {}
