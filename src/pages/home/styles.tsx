@@ -16,6 +16,10 @@ export const AppRoot = createGlobalStyle`
   button {
     background-color: transparent;
   }
+
+  h2 {
+    font-size: 2rem;
+  }
 `
 
 export {}
