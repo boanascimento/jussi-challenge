@@ -1,9 +1,9 @@
 import React from 'react'
 import { Container, AppRoot } from './styles'
-import { HeaderBar } from '../../components/headerBar'
-import { HeroBanner } from '../../components/heroBanner'
-import { LogoBar } from '../../components/logoBar'
-import { OurSolutions } from '../../components/ourSolutions'
+import { HeaderBar } from '../../components/local/headerBar'
+import { HeroBanner } from '../../components/local/heroBanner'
+import { LogoBar } from '../../components/local/logoBar'
+import { OurSolutions } from '../../components/local/ourSolutions'
 
 export const HomePage: React.FC<any> = (): JSX.Element => {
   return (

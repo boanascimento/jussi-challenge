@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import imgLogo from '../../assets/images/logoJussiVectorGreen.svg'
-import { Colors, Default } from '../../styles'
+import imgLogo from '../../../assets/images/logoJussiVectorGreen.svg'
+import { Colors, Default } from '../../../styles'
 
 export const Container = styled.div`
   display: flex;
