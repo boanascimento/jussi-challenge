@@ -1,8 +1,8 @@
 import React, { useCallback, useLayoutEffect, useState } from 'react'
 import { Container, TitleContent, ProductContent } from './styles'
-import { IProduct } from '../../service/types'
-import { Mock } from '../../service/mock'
-import { ProductCardSolution } from '../global/productCardSolution'
+import { IProduct } from '../../../service/types'
+import { Mock } from '../../../service/mock'
+import { ProductCardSolution } from '../../global/productCardSolution'
 
 interface IOurSolutionsProps {}
 
