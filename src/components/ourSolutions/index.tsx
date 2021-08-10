@@ -2,7 +2,7 @@ import React, { useCallback, useLayoutEffect, useState } from 'react'
 import { Container, TitleContent, ProductContent } from './styles'
 import { IProduct } from '../../service/types'
 import { Mock } from '../../service/mock'
-import { ProductCardSolution } from '../../components/common/productCardSolution'
+import { ProductCardSolution } from '../global/productCardSolution'
 
 interface IOurSolutionsProps {}
 

@@ -10,7 +10,7 @@ import {
 } from './styles'
 import imgSearch from '../../assets/images/search.svg'
 import imgShoppingCart from '../../assets/images/shoppingCart.svg'
-import { IconButton } from '../common/iconButton'
+import { IconButton } from '../global/iconButton'
 
 export const HeaderBar: React.FC = (): JSX.Element => {
   return (

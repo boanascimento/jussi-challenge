@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { LogoContent } from '../common/logoContent'
+import { LogoContent } from '../global/logoContent'
 import { Arrow, Container } from './styles'
 import brastemp from '../../assets/images/logo-brastemp.png'
 import compraCerta from '../../assets/images/logo-compra-certa.png'
