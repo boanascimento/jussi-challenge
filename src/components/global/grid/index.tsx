@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { BreakPoint } from '../../../styles'
+import { BreakPoint, Default } from '../../../styles'
 
 interface IRow {
   flexDirection?: string
@@ -22,6 +22,7 @@ export const Col = styled.div<ICol>`
   width: ${(props) =>
     props?.width ? (props?.width * 8.3333).toString() + '%' : '100%'};
   flex-direction: column;
+  transition: ${Default.transition};
 
   @media screen and (max-width: ${BreakPoint.laptop}) {
     width: 100%;
