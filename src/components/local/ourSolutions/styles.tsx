@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Colors, Default } from '../../../styles'
+import { BreakPoint, Colors, Default } from '../../../styles'
 
 export const Container = styled.div`
   display: flex;
@@ -26,6 +26,10 @@ export const TitleContent = styled.div`
 
 export const ProductContent = styled.div`
   display: flex;
-  margin-top: 2rem;
   justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: ${BreakPoint.laptop}) {
+    justify-content: space-around;
+  }
 `
