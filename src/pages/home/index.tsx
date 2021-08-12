@@ -6,6 +6,7 @@ import { LogoBar } from '../../components/local/logoBar'
 import { OurSolutions } from '../../components/local/ourSolutions'
 import { JussiSession } from '../../components/local/jussiSession'
 import { ContactInfo } from '../../components/local/contactInfo'
+import { Newsletter } from '../../components/local/newsletter'
 
 export const HomePage: React.FC<any> = (): JSX.Element => {
   return (
@@ -17,6 +18,7 @@ export const HomePage: React.FC<any> = (): JSX.Element => {
       <OurSolutions />
       <JussiSession />
       <ContactInfo />
+      <Newsletter />
     </Container>
   )
 }
