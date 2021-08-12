@@ -11,8 +11,7 @@ export const Container = styled.div`
 export const TitleContent = styled.div`
   display: flex;
   flex-direction: row;
-  span,
-  h2 {
+  span {
     height: 2rem;
     margin: 1rem 0;
   }

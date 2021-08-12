@@ -10,7 +10,11 @@ export const AppRoot = createGlobalStyle`
     font-family: 'Barlow', sans-serif;
     font-size: 16px;
     outline: none;
-    border: none
+    border: none;
+  }
+
+  html {
+    /* width: 100%; */
   }
 
   button {
@@ -19,7 +23,13 @@ export const AppRoot = createGlobalStyle`
 
   h2 {
     font-size: 2rem;
+    margin: 1rem 0;
   }
+
+  h2, p {
+    text-align: left;
+  }
+
 `
 
 export {}

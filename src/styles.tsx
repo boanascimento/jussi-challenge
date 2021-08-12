@@ -8,3 +8,12 @@ export enum Colors {
 export enum Default {
   transition = '0.3s',
 }
+
+export enum BreakPoint {
+  laptopL = '1440px',
+  laptop = '1024px',
+  tablet = '768px',
+  mobileL = '425px',
+  mobileM = '375px',
+  mobileS = '320px',
+}
