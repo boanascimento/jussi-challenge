@@ -1,13 +1,13 @@
-import React from 'react';
-import './App.css';
-import { HomePage } from './pages/home';
+import React from 'react'
+import './App.css'
+import { HomePage } from './pages/home'
 
 export const App: React.FC = () => {
   return (
-    <div className="App">
+    <div>
       <HomePage></HomePage>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

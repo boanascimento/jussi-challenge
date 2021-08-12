@@ -8,9 +8,9 @@ import {
   SearchContent,
   InputSearch,
 } from './styles'
-import imgSearch from '../../assets/images/search.svg'
-import imgShoppingCart from '../../assets/images/shoppingCart.svg'
-import { IconButton } from '../global/iconButton'
+import imgSearch from '../../../assets/images/search.svg'
+import imgShoppingCart from '../../../assets/images/shoppingCart.svg'
+import { IconButton } from '../../global/iconButton'
 
 export const HeaderBar: React.FC = (): JSX.Element => {
   return (

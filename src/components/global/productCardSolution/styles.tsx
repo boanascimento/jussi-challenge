@@ -1,13 +1,20 @@
 import styled from 'styled-components'
-import { Colors } from '../../../styles'
+import { BreakPoint, Colors } from '../../../styles'
 
 export const Container = styled.div`
   width: 15rem;
+  min-width: 15rem;
   border-radius: 0.25rem;
   border: 1px solid ${Colors.greyLight};
   display: flex;
   justify-content: start;
   flex-direction: column;
+  margin-top: 2rem;
+
+  @media screen and (max-width: ${BreakPoint.laptop}) {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 `
 
 export const Avatar = styled.div`

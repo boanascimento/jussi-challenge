@@ -1,15 +1,15 @@
 import React from 'react'
 import { Container, LeftContent, RightContent } from './styles'
-import { TransparentButton } from '../global/transparentButton'
-import { ProductCard } from '../global/productCard'
-import freezer from '../../assets/freezer.png'
-import mixer from '../../assets/mixer.png'
-import jhonyWalker from '../../assets/jhony-walker.png'
+import { TransparentButton } from '../../global/transparentButton'
+import { ProductCard } from '../../global/productCard'
+import freezer from '../../../assets/freezer.png'
+import mixer from '../../../assets/mixer.png'
+import jhonyWalker from '../../../assets/jhony-walker.png'
 
 export const HeroBanner: React.FC = (): JSX.Element => {
   return (
     <Container>
-      <LeftContent>
+      <LeftContent width={6}>
         <h1>CRIAMOS LOJAS QUE VENDEM MAIS.</h1>
         <p>
           A Jüssi é especialista na criação de lojas usando a plataforma VTEX.
@@ -17,7 +17,7 @@ export const HeroBanner: React.FC = (): JSX.Element => {
         </p>
         <TransparentButton text={'Veja nossas soluções'} />
       </LeftContent>
-      <RightContent>
+      <RightContent width={6}>
         <ProductCard
           style={{
             top: '10rem',
