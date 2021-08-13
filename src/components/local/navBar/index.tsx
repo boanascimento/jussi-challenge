@@ -12,7 +12,7 @@ import imgSearch from '../../../assets/images/search.svg'
 import imgShoppingCart from '../../../assets/images/shoppingCart.svg'
 import { IconButton } from '../../global/iconButton'
 
-export const HeaderBar: React.FC = (): JSX.Element => {
+export const NavBar: React.FC = (): JSX.Element => {
   return (
     <Container>
       <LeftGroupButtons>

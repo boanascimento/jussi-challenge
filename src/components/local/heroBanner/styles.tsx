@@ -1,13 +1,17 @@
 import styled from 'styled-components'
 import { BreakPoint, Colors, Default } from '../../../styles'
-import { Row, Col } from '../../global/grid'
+import { Col } from '../../global/grid'
 
-export const Container = styled(Row)`
+export const Container = styled.header`
   display: flex;
   background-color: ${Colors.greenJussi};
   padding: 1rem 9rem;
   min-height: 35rem;
   transition: ${Default.transition};
+
+  @media screen and (max-width: ${BreakPoint.laptop}) {
+    flex-direction: column;
+  }
 `
 
 export const LeftContent = styled(Col)`

@@ -28,13 +28,13 @@ export const Avatar = styled.div`
   margin: 1rem;
 `
 
-export const ProductName = styled.span`
+export const ProductName = styled.p`
   font-size: 1rem;
   width: fit-content;
   margin: 1rem;
 `
 
-export const DescriptionName = styled.span`
+export const DescriptionName = styled.p`
   font-size: 0.75rem;
   color: ${Colors.pinkJussi};
   width: fit-content;
