@@ -2,7 +2,7 @@ import React from 'react'
 import { Row } from '../../global/grid'
 import { TransparentButton } from '../../global/transparentButton'
 import { Container, Col1, Col2 } from './styles'
-import jussiImg from '../../../assets/image-jussi.png'
+import jussiImg from '../../../assets/images/image-jussi.png'
 
 export const JussiSession: React.FC = () => {
   return (

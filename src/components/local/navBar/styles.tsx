@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import imgLogo from '../../../assets/images/logoJussiVectorGreen.svg'
 import { BreakPoint, Colors, Default } from '../../../styles'
 
-export const Container = styled.div`
+export const Container = styled.nav`
   display: flex;
   flex-direction: row;
   padding: 15px 20px;

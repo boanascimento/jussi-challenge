@@ -6,7 +6,7 @@ export class Mock {
    * @returns
    */
   async getSolutions(): Promise<IProduct[]> {
-    return new Promise((resolv, reject) => {
+    return new Promise((resolv) => {
       resolv([
         {
           avatar: 'P1',

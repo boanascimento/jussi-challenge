@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { BreakPoint, Colors, Default } from '../../../styles'
 
-export const Container = styled.div`
+export const Container = styled.section`
   display: flex;
   transition: ${Default.transition};
   padding: 3rem 10rem;

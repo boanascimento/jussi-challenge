@@ -2,9 +2,9 @@ import React from 'react'
 import { Container, LeftContent, RightContent } from './styles'
 import { TransparentButton } from '../../global/transparentButton'
 import { ProductCard } from '../../global/productCard'
-import freezer from '../../../assets/freezer.png'
-import mixer from '../../../assets/mixer.png'
-import jhonyWalker from '../../../assets/jhony-walker.png'
+import freezer from '../../../assets/images/freezer.png'
+import mixer from '../../../assets/images/mixer.png'
+import jhonyWalker from '../../../assets/images/jhony-walker.png'
 
 export const HeroBanner: React.FC = (): JSX.Element => {
   return (

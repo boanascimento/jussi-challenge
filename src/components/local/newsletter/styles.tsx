@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { BreakPoint } from '../../../styles'
 
-export const Container = styled.div`
+export const Container = styled.section`
   background-color: black;
   padding: 3rem 0;
   display: flex;
