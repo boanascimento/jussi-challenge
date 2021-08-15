@@ -7,6 +7,7 @@ export enum Colors {
 
 export enum Default {
   transition = '0.3s',
+  fastTransition = '0.1s',
 }
 
 export enum BreakPoint {

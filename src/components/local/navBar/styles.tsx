@@ -51,6 +51,7 @@ export const ButtonMenu = styled.button`
   margin: 0 10px;
   &:hover {
     background-color: ${Colors.greenJussi};
+    cursor: pointer;
   }
 `
 
@@ -66,6 +67,12 @@ export const SearchContent = styled.div`
 export const InputSearch = styled.input`
   color: ${Colors.pinkJussi};
   background-color: transparent;
+  transition: ${Default.transition};
+  width: 11rem;
+
+  :focus {
+    width: 16rem;
+  }
 `
 
 export {}

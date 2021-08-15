@@ -14,7 +14,7 @@ export const AppRoot = createGlobalStyle`
   }
 
   html {
-    /* width: 100%; */
+    scroll-behavior: smooth;
   }
 
   button {

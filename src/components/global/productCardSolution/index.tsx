@@ -12,7 +12,9 @@ import {
 export const ProductCardSolution: React.FC<IProduct> = (props): JSX.Element => {
   const [features] = useState(() => {
     const elements: JSX.Element[] = []
-    props.features.map((feature) => elements.push(<li>{feature}</li>))
+    props.features.map((feature, i) =>
+      elements.push(<li key={i}>{feature}</li>),
+    )
     return elements
   })
   return (

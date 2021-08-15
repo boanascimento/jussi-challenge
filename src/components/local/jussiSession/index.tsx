@@ -4,9 +4,13 @@ import { TransparentButton } from '../../global/transparentButton'
 import { Container, Col1, Col2 } from './styles'
 import jussiImg from '../../../assets/images/image-jussi.png'
 
-export const JussiSession: React.FC = () => {
+interface IJussiSession {
+  id: string
+}
+
+export const JussiSession: React.FC<IJussiSession> = (props): JSX.Element => {
   return (
-    <Container>
+    <Container id={props.id}>
       <Row>
         <Col1 width={6}>
           <h2>Olá, somos a Jüssi</h2>

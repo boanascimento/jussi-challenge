@@ -4,15 +4,19 @@ import { IProduct } from '../../../service/types'
 import { Mock } from '../../../service/mock'
 import { ProductCardSolution } from '../../global/productCardSolution'
 
-interface IOurSolutionsProps {}
+interface IOurSolutionsProps {
+  id: string
+}
 
-export const OurSolutions: React.FC<IOurSolutionsProps> = (): JSX.Element => {
+export const OurSolutions: React.FC<IOurSolutionsProps> = (
+  props,
+): JSX.Element => {
   const [productCard, setProductCards] = useState<JSX.Element[]>()
 
   const initProductCards = useCallback((products: IProduct[]): void => {
     let elements: JSX.Element[] = []
-    products.map((product) =>
-      elements.push(<ProductCardSolution {...product} />),
+    products.map((product, i) =>
+      elements.push(<ProductCardSolution {...product} key={i} />),
     )
     setProductCards(elements)
   }, [])
@@ -22,7 +26,7 @@ export const OurSolutions: React.FC<IOurSolutionsProps> = (): JSX.Element => {
       const response = await new Mock().getSolutions()
       initProductCards(response)
     } catch (error) {
-      console.log('🚀  Jussi ~ getProductList ~ error', error)
+      console.error('Jussi ~ getProductList ~ error', error)
     }
   }, [initProductCards])
 
@@ -30,7 +34,7 @@ export const OurSolutions: React.FC<IOurSolutionsProps> = (): JSX.Element => {
     getProductList()
   }, [getProductList])
   return (
-    <Container>
+    <Container id={props.id}>
       <TitleContent>
         <span>//</span>
         <h2>NOSSAS SOLUÇÕES</h2>
