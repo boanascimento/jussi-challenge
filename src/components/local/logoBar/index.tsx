@@ -10,7 +10,7 @@ export const LogoBar: React.FC = (): JSX.Element => {
   const logoList = [brastemp, compraCerta, consul, theBar]
   const [logos] = useState(() => {
     const elements: JSX.Element[] = []
-    logoList.map((logo) => elements.push(<LogoContent img={logo} />))
+    logoList.map((logo, i) => elements.push(<LogoContent img={logo} key={i} />))
     return elements
   })
   return (

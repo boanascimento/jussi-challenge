@@ -9,6 +9,11 @@ import { ContactInfo } from '../../components/local/contactInfo'
 import { Newsletter } from '../../components/local/newsletter'
 import { Footer } from '../../components/local/footer'
 
+export enum HomePageIds {
+  ourSolution = 'ourSolution',
+  jussiSession = 'jussiSession',
+}
+
 export const HomePage: React.FC<any> = (): JSX.Element => {
   return (
     <Container>
@@ -16,8 +21,8 @@ export const HomePage: React.FC<any> = (): JSX.Element => {
       <NavBar />
       <HeroBanner />
       <LogoBar />
-      <OurSolutions />
-      <JussiSession />
+      <OurSolutions id={HomePageIds.ourSolution} />
+      <JussiSession id={HomePageIds.jussiSession} />
       <ContactInfo />
       <Newsletter />
       <Footer />
