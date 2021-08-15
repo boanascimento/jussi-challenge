@@ -29,7 +29,9 @@ export const NavBar: React.FC = (): JSX.Element => {
       dispatch(SetGitUser(response.data))
       setOpen(true)
     } catch (error) {
-      console.error('🚀  Bonny ~ search ~ error', error)
+      if (error.response.status === 404)
+        alert(`O usuário "${searchValue}" não existe!!`)
+      else alert(`Ocorreu um erro, favor tentar novamente!`)
     }
   }, [dispatch, searchValue])
 
