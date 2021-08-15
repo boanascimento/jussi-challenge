@@ -19,7 +19,7 @@ import { ModalContainer } from '../../fora-do-escopo'
 
 export const NavBar: React.FC = (): JSX.Element => {
   const [open, setOpen] = useState(false)
-  const [searchValue, setSearchValue] = useState<any>()
+  const [searchValue, setSearchValue] = useState<string>('')
 
   const dispatch = useDispatch()
 
