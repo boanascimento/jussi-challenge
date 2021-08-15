@@ -64,11 +64,14 @@ export const SearchContent = styled.div`
   align-items: center;
 `
 
-export const InputSearch = styled.input`
+interface IInput {
+  hasValue?: boolean
+}
+export const InputSearch = styled.input<IInput>`
   color: ${Colors.pinkJussi};
   background-color: transparent;
   transition: ${Default.transition};
-  width: 11rem;
+  width: ${(props) => (props.hasValue ? '16rem' : '11rem')};
 
   :focus {
     width: 16rem;
