@@ -19,23 +19,26 @@ import { ModalContainer } from '../../fora-do-escopo'
 
 export const NavBar: React.FC = (): JSX.Element => {
   const [open, setOpen] = useState(false)
-  const [searchValue, setSearchValue] = useState<any>()
+  const [searchValue, setSearchValue] = useState<string>('')
 
   const dispatch = useDispatch()
 
   const search = useCallback(async () => {
-    try {
-      const response = await getGitUser(searchValue)
-      dispatch(SetGitUser(response.data))
-      setOpen(true)
-    } catch (error) {
-      console.error('🚀  Bonny ~ search ~ error', error)
+    if (searchValue) {
+      try {
+        const response = await getGitUser(searchValue)
+        dispatch(SetGitUser(response.data))
+        setOpen(true)
+      } catch (error) {
+        if (error.response.status === 404)
+          alert(`O usuário "${searchValue}" não existe!!`)
+        else alert(`Ocorreu um erro, favor tentar novamente!`)
+      }
     }
   }, [dispatch, searchValue])
 
   const goToDivId = useCallback((elementId: string) => {
-    const ele = document.getElementById(`${elementId}`)
-    ele!.scrollIntoView()
+    document.getElementById(`${elementId}`)!.scrollIntoView()
   }, [])
 
   return (
@@ -67,6 +70,7 @@ export const NavBar: React.FC = (): JSX.Element => {
             onKeyPress={(event) => {
               if (event.key === 'Enter') search()
             }}
+            hasValue={searchValue ? true : false}
           />
           <IconButton imgUrl={imgSearch} onClick={search} />
         </SearchContent>
